@@ -36,6 +36,14 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    border: 1px solid #000000;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 
 body {
@@ -52,7 +60,11 @@ span {
 
 }
 
+
+
 .logo {
+    margin: 24px 0px 25px 0;
+
     color: var(--logo-color);
     font-family: 'Raleway';
     font-weight: 700;
@@ -64,7 +76,20 @@ span {
 
 /*main-nav*/
 
+.main-nav {
+    display: flex;
+}
+
+.main-nav .item {
+    margin-right: 50px;
+}
+
+.main-nav .item:last-child {
+    margin-right: 0;
+}
+
 .main-nav .link {
+
     color: var(--main-nav-link-color);
     font-weight: 500;
     font-size: 14px;
@@ -158,6 +183,8 @@ span {
 /*feature-list*/
 
 .feature-list .title {
+    margin-bottom: 10px;
+
     color: var(--main-nav-link-color);
     font-weight: 700;
     font-size: 14px;
@@ -175,6 +202,8 @@ span {
 /*picture*/
 
 .picture {
+    margin-bottom: 50px;
+
     color: var(--main-nav-link-color);
     font-weight: 700;
     font-size: 36px;
@@ -194,6 +223,8 @@ span {
 }
 
 .team {
+    margin-bottom: 50px;
+
     color: var(--main-nav-link-color);
     font-weight: 700;
     font-size: 36px;
