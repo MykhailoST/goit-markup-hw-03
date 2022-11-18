@@ -330,7 +330,8 @@ header {
 }
 
 .team-list p {
-    padding: 0px 70PX 30PX 70PX;
+    padding-top: 0px;
+    padding-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.18;
@@ -422,9 +423,13 @@ address .link {
 
 }
 
+/* .filter {
+    border: transparent;
+} */
 
 .list-but .filter + .filter {
     margin-left: 8px;
+    
 }
 
 
@@ -432,6 +437,7 @@ address .link {
     display: flex;
     border-radius: 4px;
     padding: 6px 22px;
+    border: transparent;
     
 
     color: var(--main-nav-link-color);
@@ -461,6 +467,7 @@ address .link {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
 
 .net-element:nth-child(3n) {
