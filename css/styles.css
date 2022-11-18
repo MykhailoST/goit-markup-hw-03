@@ -23,7 +23,8 @@ h6 {
 ul,
 ol {
     margin: 0px;
-    padding-left: 0px;
+    /* padding-left: 0px; */
+    padding: 0;
 }
 
 /* img {
@@ -44,7 +45,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
 }
 
 .section {
@@ -123,6 +124,10 @@ span {
 
 
 /* header > ul */
+
+header {
+    border-bottom: 1px solid #ECECEC;;
+}
 
 .nav {
     display: flex;
@@ -313,7 +318,8 @@ span {
 }
 
 .team-member {
-   padding: 30px 70PX 10PX 70PX;
+   padding-top: 30px;
+   padding-bottom: 10px;
 
     color: var(--main-nav-link-color);
     font-weight: 500;
