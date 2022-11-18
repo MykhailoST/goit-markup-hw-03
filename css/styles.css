@@ -26,8 +26,15 @@ ol {
     padding-left: 0px;
 }
 
+/* img {
+    display: block;
+} */
+
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .container {
@@ -79,12 +86,10 @@ span {
 
 .main-header {
     display: flex;
-    
 }
 
 .main-nav {
-    display: flex;
-    
+    display: flex;    
 }
 
 .main-nav .item {
@@ -273,16 +278,7 @@ span {
 
 /*team*/
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 
-}
-
-/* .team-list img {
-    margin-bottom: 30px;
-} */
 
 .team-list {
     display: flex;
@@ -415,6 +411,8 @@ address .link {
 .list-but {
     display: flex;
     justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
 
 }
 
@@ -450,13 +448,32 @@ address .link {
 .net {
     display: flex;
     flex-wrap: wrap;
-}    
+} 
+
 
 .net-element {
-    min-width: 370px;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
+.net-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.net-element:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.title-element {
+    margin: 20px 24px 20px 24px;
+}
+
+
+
 .project {
+    padding: 20px 24px 4px 24px;
+
     color: var(--main-nav-link-color);
     font-weight: 700;
     font-size: 18px;
@@ -464,6 +481,8 @@ address .link {
     letter-spacing: 0.06em;
 }
 .description {
+    padding: 0px 24px 20px 24px;
+
     color: var(--body-color);
     font-size: 16px;
     line-height: 1.88;
